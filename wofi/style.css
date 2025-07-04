@@ -1,6 +1,7 @@
 window {
   color: #f5f5f5;
   background: transparent;
+  opacity: 0.6;
 }
 
 #input {
