@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Startpage</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --fg: #dcdcdc;
+      --accent: #81a1c1;
+      --font: 'Fira Code', monospace;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: var(--font);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--fg);
+      background-color: #1c1e26;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.1rem;
+      border: 2px solid transparent;
+      transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+
+    a:hover {
+      border-color: var(--accent);
+      background-color: #232530;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Startpage</h1>
+  <div class="grid">
+    <a href="https://google.com">Google</a>
+    <a href="https://github.com">GitHub</a>
+    <a href="https://reddit.com">Reddit</a>
+    <a href="https://wikipedia.org">Wikipedia</a>
+    <a href="https://chat.openai.com">ChatGPT</a>
+    <a href="https://youtube.com">YouTube</a>
+    <a href="https://news.ycombinator.com">Hacker News</a>
+    <a href="https://arxiv.org">arXiv</a>
+  </div>
+  <footer>qutebrowser startpage | made with <3</footer>
+</body>
+</html>

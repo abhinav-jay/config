@@ -1,0 +1,42 @@
+@define-color bg        rgba(26,27,38,0.6); /* transparent background */
+@define-color border    rgba(122,162,247,0.8); /* TokyoNight blue */
+@define-color fg        #c0caf5;
+@define-color muted     #565f89;
+@define-color accent    #7aa2f7;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 18px;
+  border: none;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: @bg;
+  color: @fg;
+  border-radius: 6px;
+  border: 2px solid @border;
+  /*margin: 6px 10px;*/
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+#workspaces button {
+  padding: 2px 10px;
+  background: transparent;
+  color: @muted;
+  transition: background 0.5s ease;
+}
+
+#workspaces button.active {
+  background-color: @accent;
+  font-weight: bold;
+}
+
+#clock, #battery, #network, #pulseaudio, #tray {
+  padding: 0 12px;
+  background: transparent;
+}
+
+#battery.critical {
+  color: #f7768e;
+}
